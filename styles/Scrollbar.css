@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam&family=Dosis:wght@300;550&family=Playfair+Display:ital@0;1&family=Redressed&family=Ubuntu:ital,wght@0,300;1,300&display=swap');
+ .body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 200px;
+	padding: 20px;
+	text-align: center;
+	text-transform: uppercase;
+	color: aliceblue;
+	font-size: 30px;
+	font-family: 'Anek Malayalam', sans-serif;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+} 
+
