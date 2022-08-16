@@ -24,6 +24,7 @@ const login = () => {
 
     } catch (error) {
       seterror('Invalid username or password!')
+      console.log(error)
       setTimeout(()=>{
         seterror('')
       }, 5000)

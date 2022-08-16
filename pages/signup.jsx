@@ -47,6 +47,7 @@ const signup = () => {
  
         }catch(error){
           seterror('Email already exists')
+          console.log(error)
           setTimeout(()=>{
             seterror('')
           }, 5000)
