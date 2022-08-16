@@ -18,7 +18,7 @@ const login = () => {
     e.preventDefault()
     // console.log(data)
     try {
-      const res = await axios.post('http://localhost:3000/api/login', data)
+      const res = await axios.post('https://ro-ten.vercel.app/api/login', data)
       local.setItem('email', data.email);
       router.push('/dashboard')
 

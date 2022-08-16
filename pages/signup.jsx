@@ -41,7 +41,7 @@ const signup = () => {
       }else{
 
         try {
-          await axios.post('http://localhost:3000/api/signup', data)
+          await axios.post('https://ro-ten.vercel.app/api/signup', data)
           local.setItem('email', data.email);
           router.push('/dashboard')
  
