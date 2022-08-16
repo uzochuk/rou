@@ -21,22 +21,14 @@ export default async function handler  (req, res) {
         }else{
             const dataBody = req.body
             try {
-                const user = await User.create(
-                    // {
-                    // accountnumber:String(Math.random()).substring(2,13),
-                    // routingnumber: String(Math.random()).substring(6,14), 
-                    // dataBody}
-
-                    req.body
-                )
-
-                res.status(201).json(user)
+                const user = await User.create(req.body)
                 res.setHeader('Set-Cookie',
                 cookie.serialize('token', '62cde0eed153fa9819825a69djkdkaka', {
                 maxAge : 60 * 60,
                 sameSite: 'strict',
                 path:'/'
                 }));
+                res.status(201).json(user)
                 
             }catch (error) {
                 res.status(400).json(error)
