@@ -74,7 +74,10 @@ export  const getServerSideProps = async (ctx) =>{
       }
   }
 
-  const res = await axios.get('https://ro-ten.vercel.app/api/userinfo');
+  const res = await axios.get(
+      // 'https://ro-ten.vercel.app/api/userinfo'
+      'https://localhost:3000/api/userinfo'
+    );
   return{
       props: {
           usersList:res.data,
